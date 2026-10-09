@@ -1,0 +1,13 @@
+# 30 Days of Verilog
+Daily Verilog designs using Vivado, from basic gates to advanced circuits. Each folder contains the design and testbench code.
+
+## Progress
+| Day | Topic |
+|-----|-------|
+| 1 | AND gate |
+| 2 | OR gate |
+| 3 | NOT gate |
+| 4 | NAND gate |
+| 5 | NOR gate |
+| 6 | XOR gate |
+| 7 | XNOR gate |
