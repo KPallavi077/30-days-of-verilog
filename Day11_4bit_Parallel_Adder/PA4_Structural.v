@@ -1,0 +1,24 @@
+module PA4_Structural (input [3:0] A, B, input Cin0, output [3:0] S, output Cout);
+  wire Cin1, Cin2, Cin3;
+  wire w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12;
+  xor x1 (w1, A[0], B[0]);
+  xor x2 (S[0], w1, Cin0);
+  and a1 (w2, Cin0, w1);
+  and a2 (w3, A[0], B[0]);
+  or o1 (Cin1, w2, w3);
+  xor x3 (w4, A[1], B[1]);
+  xor x4 (S[1], w4, Cin1);
+  and a3 (w5, Cin1, w4);
+  and a4 (w6, A[1], B[1]);
+  or o2 (Cin2, w5, w6);
+  xor x5 (w7, A[2], B[2]);
+  xor x6 (S[2], w7, Cin2);
+  and a5 (w8, Cin2, w7);
+  and a6 (w9, A[2], B[2]);
+  or o3 (Cin3, w8, w9);
+  xor x7 (w10, A[3], B[3]);
+  xor x8 (S[3], w10, Cin3);
+  and a7 (w11, Cin3, w10);
+  and a8 (w12, A[3], B[3]);
+  or o4 (Cout, w11, w12);
+endmodule
