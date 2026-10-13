@@ -1,0 +1,24 @@
+module PA4_Dataflow (input [3:0] A, B, input Cin0, output [3:0] S, output Cout);
+  wire Cin1, Cin2, Cin3;
+  wire w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12;
+  assign w1 = A[0] ^ B[0];
+  assign S[0] = w1 ^ Cin0;
+  assign w2 = Cin0 & w1;
+  assign w3 = A[0] & B[0];
+  assign Cin1 = w2 | w3;
+  assign w4 = A[1] ^ B[1];
+  assign S[1] = w4 ^ Cin1;
+  assign w5 = Cin1 & w4;
+  assign w6 = A[1] & B[1];
+  assign Cin2 = w5 | w6;
+  assign w7 = A[2] ^ B[2];
+  assign S[2] = w7 ^ Cin2;
+  assign w8 = Cin2 & w7;
+  assign w9 = A[2] & B[2];
+  assign Cin3 = w8 | w9;
+  assign w10 = A[3] ^ B[3];
+  assign S[3] = w10 ^ Cin3;
+  assign w11 = Cin3 & w10;
+  assign w12 = A[3] & B[3];
+  assign Cout = w11 | w12;
+endmodule
