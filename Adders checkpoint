@@ -1,0 +1,8 @@
+🔹 Built so far
+• Adders: half adder, full adder, full adder from two half adders, 4-bit parallel adder (ripple carry), carry look-ahead, carry select and carry skip
+• Subtractors: half subtractor, full subtractor and 4-bit parallel subtractor
+
+🔹 What I learned
+• A ripple carry adder is simple, but each carry waits for the stage before it, so it gets slower as the bits grow
+• Carry look-ahead, carry select and carry skip are faster, because they trade extra hardware for speed
+• Every design here was written in dataflow, structural and behavioral style
